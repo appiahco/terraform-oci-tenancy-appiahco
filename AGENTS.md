@@ -42,3 +42,17 @@ Use subagents to save tokens, protect the context window, and stay within rate l
 - Give each subagent a self-contained prompt and ask for a short, structured report.
 - Run independent subagents in parallel. Do not spawn one when a single direct tool call would do.
 - Keep decisions, approvals, and final verification in the main agent.
+
+## Agent skills
+
+### Issue tracker
+
+Issues and specs live as local markdown files under `.scratch/`, tracked in Git. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
